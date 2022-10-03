@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify from "vite-plugin-vuetify";
 import Pages from 'vite-plugin-pages'
+import inspect from "vite-plugin-inspect";
 
 export default defineConfig({
   base: "/verwaltung/",
@@ -9,6 +10,7 @@ export default defineConfig({
     port: 3001,
   },
   plugins: [
+    inspect(),
     vue(),
     vuetify({
       styles: {
